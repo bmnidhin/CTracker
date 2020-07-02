@@ -2,8 +2,8 @@
 @baseUrl = http://localhost:5000
 
 ## Get a random clever quote
-# GET {{baseUrl}}/users/
-# Accept: application/hal+json
+GET {{baseUrl}}/exercises/
+Accept: application/hal+json
 
 # POST {{baseUrl}}/users/add
 # content-type: application/json
@@ -12,15 +12,15 @@
 #  "username": "beau"
 # }
 
-POST {{baseUrl}}/exercises/update/5efc4ad048a23925e47351c6
-content-type: application/json
+# POST {{baseUrl}}/exercises/update/5efc4ad048a23925e47351c6
+# content-type: application/json
 
-{
- "username": "beau",
- "description": "googling",
- "duration": 225,
- "date": "2019-04-29T21:22:15.187Z"
-}
+# {
+#  "username": "beau",
+#  "description": "googling",
+#  "duration": 225,
+#  "date": "2019-04-29T21:22:15.187Z"
+# }
 
 # DELETE {{baseUrl}}/exercises/5efc4af448a23925e47351c7 HTTP/1.1
 # Accept: application/hal+json
